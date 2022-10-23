@@ -707,6 +707,10 @@ img {
     margin-right: 10px;
 }
 
+.text-input {
+    color: var(--hero-text);
+}
+
 .js-speaker-form input {
     padding-left: 16px;
     min-width: 358px;
