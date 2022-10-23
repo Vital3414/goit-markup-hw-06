@@ -140,28 +140,37 @@
           <h2 class="section-3">Чим ми займаємося</h2>
           <ul class="hero-section3 list">
             <li>
-              <img
-                src="./images/images1.jpg"
-                alt="Розробка сайтів"
-                width="370"
-                height="294"
-              />
+              <div class="photo-section-3">
+                <img
+                  src="./images/images1.jpg"
+                  alt="Розробка сайтів"
+                  width="370"
+                  height="294"
+                />
+                <p class="hero-section-3-text">Десктопні додатки</p>
+              </div>
             </li>
             <li>
-              <img
-                src="./images/images2.jpg"
-                alt="Розробка мобільних додатків"
-                width="370"
-                height="294"
-              />
+              <div class="photo-section-3">
+                <img
+                  src="./images/images2.jpg"
+                  alt="Розробка мобільних додатків"
+                  width="370"
+                  height="294"
+                />
+                <p class="hero-section-3-text">Мобільні додатки</p>
+              </div>
             </li>
             <li>
-              <img
-                src="./images/images3.jpg"
-                alt="Дизайн сайтів"
-                width="370"
-                height="294"
-              />
+              <div class="photo-section-3">
+                <img
+                  src="./images/images3.jpg"
+                  alt="Дизайн сайтів"
+                  width="370"
+                  height="294"
+                />
+                <p class="hero-section-3-text">Дизайнерскі рішення</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -478,10 +487,91 @@
             </li>
           </ul>
         </div>
+        <div class="subscribe">
+          <p class="subscribe-text">Підпишіться на розсилку</p>
+          <form class="js-speaker-form">
+            <label for="mail" class="form-mail">
+              <input type="email" name="mail" placeholder="E-mail" id="mail" />
+            </label>
+            <button class="subscribe-text-btn" type="submit">
+              Підписатися
+              <svg class="send-icon" width="24" height="24">
+                <use href="./images/symbol-defs.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
+        <div class="questionnaire">
+          <p class="modal-text">Залиште свої дані, ми вам передзвонимо</p>
+          <form class="questionnaire-form-1">
+            <div class="field">
+              <label for="user" class="label-text">Ім'я</label>
+              <div class="input-wrap">
+                <input type="user" name="user" id="user" class="modal-input" />
+                <svg class="modal-person-icon" width="18" height="18">
+                  <use href="images/symbol-defs.svg#icon-person"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="field">
+              <label for="tel" class="label-text">Телефон</label>
+              <div class="input-wrap">
+                <input type="tel" name="tel" id="tel" class="modal-input" />
+                <svg class="modal-person-icon" width="18" height="18">
+                  <use href="images/symbol-defs.svg#icon-phone"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="field">
+              <label for="email" class="label-text">Пошта</label>
+              <div class="input-wrap">
+                <input
+                  type="email"
+                  name="mail"
+                  id="email"
+                  class="modal-input"
+                />
+                <svg class="modal-person-icon" width="18" height="18">
+                  <use href="images/symbol-defs.svg#icon-email"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="field">
+              <label for="comment" class="label-text">Коментар</label>
+              <textarea
+                name="comment"
+                id="comment"
+                placeholder="Введіть текст"
+                class="modal-texteria"
+              ></textarea>
+            </div>
+            <div class="politics">
+              <input
+                type="checkbox"
+                class="input-check visualy-hidden"
+                name="privacy"
+                value="tru"
+                id="privacy"
+              />
+              <label for="privacy" class="check-text">
+                <span>
+                  <svg class="check-icon" width="11" height="8">
+                    <use href="images/symbol-defs.svg#icon-check"></use>
+                  </svg>
+                </span>
+                Погоджуюся з розсилкою та приймаю
+                <a class="term-contract">Умови договору</a></label
+              >
+            </div>
+            <div class="modal-btn-text">
+              <button type="submit" class="btn-text-modal">Відправити</button>
+            </div>
+          </form>
+        </div>
         <button type="button" data-modal-close class="modal-btn">
           <svg class="modal-close-icon" width="18" height="18">
             <use href="./images/symbol-defs.svg#icon-close"></use>
