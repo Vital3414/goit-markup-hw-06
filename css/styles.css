@@ -678,7 +678,6 @@ img {
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
-    position: absolute;
     letter-spacing: 0.06em;
     color: var(--hero-text);
     background-color: var(--header-color);
@@ -874,8 +873,22 @@ img {
     cursor: pointer;
 }
 
-.modal-close-icon:hover,
-.modal-close-icon:focus {
+/* .modal-close-icon:hover {
+    fill: var(--header-color);
+}
+
+.modal-btn:hover+.modal-close-icon:hover {
+    background-color: transparent;
+    fill: var(--header-color);
+} */
+
+.modal-btn:hover,
+.modal-btn:focus {
+    background-color: var(--hero-text);
+}
+
+.modal-btn:hover .modal-close-icon,
+.modal-btn:focus .modal-close-icon {
     fill: var(--header-color);
 }
 
@@ -979,7 +992,7 @@ img {
 }
 
 .check-text {
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -988,6 +1001,7 @@ img {
     color: var(--header-tel);
     display: flex;
     align-items: center;
+    justify-content: center;
     margin-bottom: 30px;
 }
 
