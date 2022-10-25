@@ -873,15 +873,6 @@ img {
     cursor: pointer;
 }
 
-/* .modal-close-icon:hover {
-    fill: var(--header-color);
-}
-
-.modal-btn:hover+.modal-close-icon:hover {
-    background-color: transparent;
-    fill: var(--header-color);
-} */
-
 .modal-btn:hover,
 .modal-btn:focus {
     background-color: var(--hero-text);
