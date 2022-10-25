@@ -899,7 +899,7 @@ img {
 }
 
 .modal-text {
-    font-family: 'Roboto' sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
